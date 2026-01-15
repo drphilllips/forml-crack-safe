@@ -6,12 +6,12 @@
 
 0. Create `correct_digits` helper fcn
 1. Calculate total num occurences of each digit (0-9)
-   a. create all-one-digit masks for each digit
-   b. count number of correct digits for each
+   - create all-one-digit masks for each digit
+   - count number of correct digits for each
 3. Use an "incrementing mask" to find positions of each digit
-   a. e.g., (d000...) -> (dd00...) -> (ddd0...) -> ...
-   b. if number of correct digits goes up from previous count, then we found one of the `n` positions for that digit
-   c. stop testing incrmenting masks once we find all `n` positions for the digit
+   - e.g., (d000...) -> (dd00...) -> (ddd0...) -> ...
+   - if number of correct digits goes up from previous count, then we found one of the `n` positions for that digit
+   - stop testing incrmenting masks once we find all `n` positions for the digit
 
 ### Analysis:
 
